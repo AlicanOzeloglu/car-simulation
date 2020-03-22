@@ -17,7 +17,7 @@ car_speed = 10
 angle = 0
 sensor_range = 200	
 
-def nesneler():   
+def environment():   
 	pygame.display.set_caption('CAR SIMULATION')
 	BasicFont = pygame.font.Font('freesansbold.ttf', 20)
 	pygame.draw.line(screen, BLACK, (5, 5), (1500,5), 12) #üst çizgi
@@ -430,7 +430,7 @@ def front_left_sensor():
 	
 
 while True: 
-	nesneler()
+	environment()
 	sensor_left = left_sensor()
 	sensor_right = right_sensor()
 	sensor_front_right = front_right_sensor()
